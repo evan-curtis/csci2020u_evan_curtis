@@ -11,8 +11,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
-
 import javafx.scene.layout.VBox;
+import org.apache.commons.validator.routines.EmailValidator;
+import org.apache.commons.validator.routines.InetAddressValidator;
 
 public class Main extends Application {
 
@@ -62,7 +63,6 @@ public class Main extends Application {
         fields.setSpacing(10);
 
         primaryStage.setScene(new Scene(fields, 400 , 300));
-
 
         primaryStage.show();
 
